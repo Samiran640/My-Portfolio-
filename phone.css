@@ -1,0 +1,46 @@
+.coloumns{
+    grid: auto;
+    justify-content: center;
+}
+.box{
+    height:auto;
+    width:auto;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    margin:10px;
+    display:inline-block;
+    padding: 10px;
+}
+.box h2{
+    color:yellowgreen;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+
+
+}
+
+.box p{
+    color:rgb(0, 255, 106);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.heading{
+    color:grey;
+    display:flex;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    bottom:20px;
+    border-right: 5px solid;
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:
+    typing 2s steps(26) ,
+    cursor .4s step-end infinite alternate;
+    
+transition: scale(2,2,3);
+}

@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.navbar {
+    display:flex;
+    justify-content:center;
+   height:50px;
+   align-items:center;
+   position:sticky;
+   top:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar ul{
+    display:flex;
+    list-style:none;
+
+}
+.navbar ul li{
+    font-size: 1.2 rem;
+}
+.navbar ul li a{
+    padding : 5px 20px;
+    text-decoration: none;
+    color : rgb(253, 255, 243);
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid yellow;
+}
+#home{
+    display:flex;
+    flex-direction: coloumn;
+    height:650px;
+    justify-content: center;
+    align-items:center;
+    background-color:rgba(0,0,0,0.5);
+
+}
+.container{
+    display: inline-block;
+
+}
+
+#home::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background-image: url(img/-1_orig.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+    width:100%;
+
+
+    z-index: -1;
+    opacity:.8;
+}
+.heading{
+    color:grey;
+    display:flex;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    border-right: 5px solid;
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:
+    typing 2s steps(26) ,
+    cursor .4s step-end infinite alternate;
+    
+transition: scale(2,2,3);
+}
+.headinggg{
+    color:grey;
+    display:flex;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    border-right: 5px solid;
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:
+    typing 2s steps(26) ,
+    cursor .4s step-end infinite alternate;
+    animation-delay: 2s;
+
+transition: scale(2,2,3);
+}
+
+#para{
+    font-family:fantasy;
+    color:rgb(119, 117, 19);
+    font-weight: lighter;
+    text-align: left;
+    font-size: 3rem;
+    border-right: 5px solid;
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:
+    typing 4s steps(28) ,
+    cursor .4s step-end infinite alternate;
+    animation-delay: 4s;
+}
+@keyframes cursor{
+    0% {border-color: transparent}
+}
+@keyframes typing{
+ from {width:0}
+}
+#portfolio{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+}
+.headingg{
+    margin:60px;
+    text-align: center;
+    font-weight: lighter;
+    color:rgb(169, 167, 167);
+    display:flex;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.gallery{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.gallery img{
+    width:400px;
+    height:640px;
+    padding: 10px;
+    margin: 10px;
+
+}
+.gallery img:hover{
+    background-color: rgb(203, 203, 16);
+    cursor:pointer;
+}
+#education
+{
+    display : flex;
+    flex-direction: column;
+    background-color: black;
+}
+.education h1{
+    margin : 60px;
+    color:whitesmoke
+}
+.eduhead{
+    margin:60px;
+    text-align: center;
+    font-weight: lighter;
+    color:rgb(169, 167, 167);
+    display:flex;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.coloumns{
+display :grid;
+grid-template-columns:auto auto ;
+}
+.box{
+    height:auto;
+    width:700px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    margin:10px;
+    display:inline-block;
+    padding: 10px;
+}
+.box h2{
+    color:yellowgreen;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+
+
+}
+
+.box p{
+    color:rgb(0, 255, 106);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+.box:hover{
+    background-color: rgb(254, 254, 249);
+    cursor:pointer;
+}
+.about{
+    width:100%;
+    padding:70px 0px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+}
+.about img{
+    padding :0px 20px;
+    height: 600px;
+    width:500px;
+      }
+.about text{
+    width:550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+display:flex;
+align-items:center;
+
+}
+.about text h2{
+    color:yellowgreen;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+.about text p{
+    color:rgb(153, 161, 141);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 38px;
+    margin-bottom: 45px;
+    text-align: center;
+    justify-content: center;
+    text-align: right; 
+        float: right;
+        top: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    background:rgb(214, 9, 101);
+    color:whitesmoke;
+    text-decoration: none;
+    border: 2px solid transaprent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+transition: .4s
+
+}
+button:hover{
+    background: transparent;
+    border:2px solid rgb(214, 9, 101);
+    cursor:pointer;
+}
+.abouthead{
+    margin:20px;
+    text-align: center;
+    font-weight: lighter;
+    color:rgb(169, 167, 167);
+    display:flex;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#contact{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+}
+#contact h1{
+    margin:50px;
+    margin:20px;
+    text-align: center;
+    font-weight: lighter;
+    color:rgb(169, 167, 167);
+    display:flex;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form{
+    display :flex;
+    flex-direction:coloumn;
+    align-items : center;
+    justify-content:center;
+
+}
+.input{
+    padding: 15px 20px;
+    margin:15px;
+    width: 100px;
+    border:yellowgreen;
+    outline:none;
+    border-radius: 25px;
+    border-color: yellowgreen;
+}
+#message{
+    margin:15px;
+    padding:10px;
+    border-radius: 20px;
+    border-color: rgb(162, 189, 108);
+  
+}
+
+#submit
+{
+    padding:15px 20px;
+    margin:30px;
+    width:15%;
+    border-radius: 20px;
+    background-color: black;
+    color: beige;
+    border: none;
+    outline:none;
+}
+#submit:hover{
+    background-color: green;
+    color: white;
+    cursor:pointer;
+}
+
